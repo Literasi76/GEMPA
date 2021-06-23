@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="themes/assets/ico/favicon.ico">
+    <title>Sesar Indonesia</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="themes/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="themes/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="themes/assets/css/carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Sesar Indonesia</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#tablebooking">Table Booking</a></li>
+				<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Indina <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">DRINKS</a></li>
+                    <li><a href="#">STARTERS</a></li>
+                    <li><a href="#">TANDOORI - CLAY OVEN - DISHES</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
+                    <li><a href="#">CHICKEN MAIN COURSES</a></li>
+                    <li><a href="#">LAMB MAIN COURSES</a></li>
+                    <li><a href="#">RICE/BREDS</a></li>
+                    <li><a href="#">ACCOMPANIMENTS</a></li>
+                  </ul>
+                </li>
+				
+				<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Italian <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">DRINKS</a></li>
+                    <li><a href="#">STARTERS</a></li>
+                    <li><a href="#">TANDOORI - CLAY OVEN - DISHES</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
+                    <li><a href="#">CHICKEN MAIN COURSES</a></li>
+                    <li><a href="#">LAMB MAIN COURSES</a></li>
+                    <li><a href="#">RICE/BREDS</a></li>
+                    <li><a href="#">ACCOMPANIMENTS</a></li>
+                  </ul>
+                </li>
+				
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chines <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">DRINKS</a></li>
+                    <li><a href="#">STARTERS</a></li>
+                    <li><a href="#">TANDOORI - CLAY OVEN - DISHES</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
+                    <li><a href="#">CHICKEN MAIN COURSES</a></li>
+                    <li><a href="#">LAMB MAIN COURSES</a></li>
+                    <li><a href="#">RICE/BREDS</a></li>
+                    <li><a href="#">ACCOMPANIMENTS</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Displaying Web maps</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+   Load Leaflet from CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  <!-- Load Esri Leaflet from CDN -->
+  <script src="https://unpkg.com/esri-leaflet@3.0.2/dist/esri-leaflet.js"
+    integrity="sha512-myckXhaJsP7Q7MZva03Tfme/MSF5a6HC2xryjAM4FxPLHGqlh5VALCbywHnzs2uPoF/4G/QVXyYDDSkp5nPfig=="
+    crossorigin=""></script>
+
+  <style>
+    body { margin:1; padding:0; }
+    #map { position: absolute; top:70px; bottom:0; right:0; left:0; }
+  </style>
+<div id="map"></div>
+
+<script>
+ var map = L.map('map').setView([-1, 117], 5);
+
+L.esri.basemapLayer('Topographic').addTo(map);
+// a Leaflet marker is used by default to symbolize point features.
+  L.esri.featureLayer({
+    url: 'https://sampleserver6.arcgisonline.com/arcgis/rest/services/Earthquakes_Since1970/MapServer/0'
+  }).addTo(map);
+</script>
+
+      <!-- FOOTER -->
+      <footer>
+		<div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+		</div>
+      </footer>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="themes/dist/js/bootstrap.min.js"></script>
+    <script src="themes/assets/js/holder.js"></script>
+  </body>
+</html>
