@@ -131,6 +131,12 @@
  var map = L.map('map').setView([-1, 117], 5);
 
 L.esri.basemapLayer('Topographic').addTo(map);
+var marker = L.marker([-9.28, 107.42],
+            )
+            .addTo(map)
+            .bindPopup("<b>Gempa dan Tsunami Pangandaran 2006</b><br>Kedalaman = 20 Kilometer<br>Waktu = 17 Juli 2006 15:19 WIB<br>Sumber Gempa= Megathrust Jawa Barat-Jawa Tengah<br>Guncangan Maksimum = V MMI<br>Tsunami = Ya (4,6 meter)<br>Area Patahan gempa = 300x75 kilometer persegi<br>Slip Maksimum = 2,7 meter<br>Total Korban = 668 orang tewas, 65 hilang & 9.275 luka-luka<br>Gempa pangandaran 2006 merupakan.")
+            .openPopup();
+
 </script>
 
       <!-- FOOTER -->
