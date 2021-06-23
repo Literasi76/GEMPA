@@ -1,0 +1,2 @@
+# GEMPA
+Tugas Geologi Kebencanaan
