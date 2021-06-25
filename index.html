@@ -59,6 +59,24 @@
       </div>
     </div>
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
 
     <!-- Carousel
     <!DOCTYPE html>
@@ -377,24 +395,6 @@ var marker = L.marker([-0.79, 99.96],
             .bindPopup("<b>Gempa Besar Sumatera Barat 2009 Mw=7,6</b><br>Kedalaman = 80 kilometer<br>Waktu = 30 September 2009 17:16:09 WIB<br>Sumber Gempa= Sesar Naik Menyamping<br>Guncangan Maksimum = VIII MMI<br>Tsunami = Ya (hmax = 0,27m)<br>Area Patahan gempa = ?<br>Slip Maksimum = 10 meter <br>Total Korban = 1.117 orng tewas & 1.124 luka-luka<br>Gempa Besar Sumatera Barat 2009 merupakan gempa yang diakibatkan oleh adanya aktivitas tektonik berupa intraslab. Sehingga gempa ini tidak termasuk kedalam gempa megathrust. Gempa ini adalah salah satu peristiwa intraslab paling mematikan didunia..")
             .openPopup();
 </script>
-
-<html>
-  <head>
-    <title>Geolocation</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script src="./index.js"></script>
-  </head>
-  <body>
-    <div id="map"></div>
-
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
-  </body>
-</html>
 
       <!-- FOOTER -->
       <footer>
